@@ -57,7 +57,7 @@
   [env proposal]
   (let [violations (hard-violations env proposal)
         safety-class (or (:safety-class proposal) :none)
-        confidence (or (:confidence proposal) 1.0)
+        confidence (or (:confidence proposal) 0.0)
         emergency? (and (= :inquiry (:kind proposal)) (= :emergency (:category proposal)))]
     (cond
       (seq violations)
