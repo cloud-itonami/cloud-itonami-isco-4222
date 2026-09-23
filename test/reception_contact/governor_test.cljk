@@ -1,5 +1,5 @@
 (ns reception-contact.governor-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [reception-contact.store :as store]
             [reception-contact.governor :as governor]))
 
